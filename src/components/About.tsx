@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { User, Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
+import profilePic from "@/assets/profile.jfif";
 
 const About = () => {
   return (
@@ -16,8 +17,12 @@ const About = () => {
           <div className="animate-fade-in">
             <div className="relative">
               <div className="w-full aspect-square rounded-2xl bg-gradient-primary p-1">
-                <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center">
-                  <User className="w-32 h-32 text-primary" />
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <img 
+                    src={profilePic} 
+                    alt="Rogem A. Lanuza Profile" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
